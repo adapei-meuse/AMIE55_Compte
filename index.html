@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ADAPEI de la Meuse - Fiches de création de comptes</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css">
+
+     <!-- Favicons -->
+    <link rel="icon" type="image/png" href="assets/img/logo_adapei_meuse.jpg" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/img/logo_adapei_meuse.jpg" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/img/logo_adapei_meuse.jpg" sizes="192x192">
+
+</head>
+
+<body style="margin-top: 80px;">
+    <div>
+        <div class="container" style="padding-top: 10px;">
+            <div class="row">
+                <div class="col-2 text-left">
+                    <img class="img-fluid" src="assets/img/logo_adapei_meuse.jpg" style="width: 118px;" id="logoPage" crossorigin="anonymous">
+                </div>
+                <div class="col-10"><img class="img-fluid" src="assets/img/vague_adapei_meuse.jpg" style="padding-top: 25px;" id="vague"></div>
+            </div>
+            <div class="row noprint" style="padding-top: 10px;">
+            </div>
+            <div class="row" style="padding-top: 90px;">
+                <div class="col">
+                    <h2 class="text-center" id="titrePage">Comptes Informatiques de l'ADAPEI de la Meuse</h2>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 30px;">
+                <div class="col offset-1">
+                    <p style="font-weight: bold;font-style: italic;"><i class="fa fa-user"></i> <span id="nomOutput">Jean RIVIERE</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-1">
+                    <p>Vous trouverez ci-dessous vos identifiants personnels vous permettant l’accès à vos comptes informatiques de l'ADAPEI de la Meuse. Veillez à bien respecter les majuscules/minuscules et ne pas diffuser vos identifiants.<br><br><br></p>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 10px;">
+                <div class="col-5 offset-1">
+                    <p>
+                        <strong><i class="fa fa-desktop"></i> Bureau distant et DIU :</strong><br>
+                        <strong>Identifiant :</strong> <span class="identifiantOutput">j.riviere</span><br>
+                        <strong>Mot de passe :</strong> <span class="passwordOutput">password</span> 
+                    </p>
+                </div>
+                <div class="col-5">
+                    <p>
+                        <strong><i class="fa fa-at"></i> Adresse mail :&nbsp;</strong><br>
+                        <strong>Identifiant :</strong> <span class="identifiantOutput">j.riviere</span>@adapei-meuse.fr <br>
+                        <strong>Mot de passe :</strong> <span class="passwordOutput">password</span>
+                    </p>
+                </div>
+            </div>
+            <div class="row noprint" style="padding-top: 10px;">
+                <div class="col offset-1">
+                    <div class="form-group"><input id="nomInput" type="text" class="form-control" placeholder="Prénom NOM"></div>
+                </div>
+                <div class="col">
+                    <input id="identifiantInput" type="text" class="form-control" placeholder="Identifiant">
+                </div>
+                <div class="col">
+                    <input id="passwordInput" type="text" class="form-control" placeholder="Mot de passe">
+                </div>
+                <div class="col">
+                    <a id="printBtn" class="btn btn-primary" href="#" role="button" onclick="window.print();"><i class="fa fa-print"></i> Imprimer</a>
+                </div>
+            </div>
+            <div class="row" style="/*padding-top: 150px;*//*position: absolute*/;bottom: 0;">
+                <div class="col" style="width: 1140px;">
+                    <hr>
+			<p>Le <span id="date">
+                        	<script>
+		                        var dateElement = document.getElementById("date");
+		                        var date = new Date();
+		                        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+		                        dateElement.innerHTML = date.toLocaleDateString('fr-FR', options);
+	                        </script>
+                        </span>
+                        <br>Service Informatique
+                        <br>2126 - 09 71 00 16 06<br><br>
+			</p>
+		</div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
