@@ -25,7 +25,7 @@
                 <div class="col-2 text-left">
                     <img class="img-fluid" src="assets/img/logo-amie1.jpg" style="width: 118px;" id="logoPage" crossorigin="anonymous">
                 </div>
-                <div class="col-10"><img class="img-fluid" src="assets/img/vague_adapei_meuse.jpg" style="padding-top: 25px;" id="vague"></div>
+                <div class="col-10"><img class="img-fluid" src="assets/img/vague_amie55.jpg" style="padding-top: 25px;" id="vague"></div>
             </div>
             <div class="row noprint" style="padding-top: 10px;">
             </div>
@@ -48,24 +48,28 @@
                 <div class="col-5 offset-1">
                     <p>
                         <strong><i class="fa fa-desktop"></i> Bureau distant :</strong><br>
-                        <strong>Identifiant :</strong> <span class="identifiantOutput">j.riviere</span><br>
+                        <strong>Identifiant :</strong> <span class="identifiantOutput" id="identifiantOutput"></span><br>
                         <strong>Mot de passe :</strong> <span class="passwordOutput">password</span> 
                     </p>
                 </div>
                 <div class="col-5">
                     <p>
-                        <strong><i class="fa fa-at"></i> Adresse mail :&nbsp;</strong><br>
-                        <strong>Identifiant :</strong> <span class="identifiantOutput">j.riviere</span>@amie55.com <br>
+                        <strong><i class="fa fa-at"></i> Adresse mail :</strong><br>
+                        <strong>Identifiant :</strong> <span class="identifiantOutput" id="identifiantOutput2"></span>@amie55.com <br>
                         <strong>Mot de passe :</strong> <span class="passwordOutput">password</span>
                     </p>
                 </div>
             </div>
             <div class="row noprint" style="padding-top: 10px;">
                 <div class="col offset-1">
-                    <div class="form-group"><input id="nomInput" type="text" class="form-control" placeholder="Prénom NOM"></div>
+                    <div class="form-group">
+                        <input id="prenomInput" type="text" class="form-control" placeholder="Prénom">
+                    </div>
                 </div>
                 <div class="col">
-                    <input id="identifiantInput" type="text" class="form-control" placeholder="Identifiant">
+                    <div class="form-group">
+                        <input id="nomInput" type="text" class="form-control" placeholder="Nom">
+                    </div>
                 </div>
                 <div class="col">
                     <input id="passwordInput" type="text" class="form-control" placeholder="Mot de passe">
@@ -74,21 +78,21 @@
                     <a id="printBtn" class="btn btn-primary" href="#" role="button" onclick="window.print();"><i class="fa fa-print"></i> Imprimer</a>
                 </div>
             </div>
-            <div class="row" style="/*padding-top: 150px;*//*position: absolute*/;bottom: 0;">
+            <div class="row" style="/*padding-top: 150px;*//*position: absolute*/;bottom: 0;"></div>
                 <div class="col" style="width: 1140px;">
                     <hr>
-			<p>Le <span id="date">
-                        	<script>
-		                        var dateElement = document.getElementById("date");
-		                        var date = new Date();
-		                        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-		                        dateElement.innerHTML = date.toLocaleDateString('fr-FR', options);
-	                        </script>
-                        </span>
-                        <br>Service Informatique
-                        <br>09 71 00 16 06<br><br>
-			</p>
-		</div>
+                    <p>Le <span id="date">
+                        <script>
+                            var dateElement = document.getElementById("date");
+                            var date = new Date();
+                            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                            dateElement.innerHTML = date.toLocaleDateString('fr-FR', options);
+                        </script>
+                    </span>
+                    <br>Service Informatique
+                    <br>09 71 00 16 06<br><br>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
