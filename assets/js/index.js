@@ -42,14 +42,14 @@ function changeLogo(){
     let logoPage = document.getElementById("logoPage");
     let vague = document.getElementById("vague");
     if(modeAsso === "ADAPEI"){
-        document.getElementById("titrePage").innerText = "Comptes Informatiques AMSEAA";
-        logoPage.src ="assets/img/logo_amseaa.jpg";
+        document.getElementById("titrePage").innerText = "Comptes Informatiques AMIE55";
+        logoPage.src ="assets/img/logo-amie1.jpg";
         vague.src ="assets/img/vague_amseaa.jpg";
         document.getElementById("changeLogoBtn").innerText = "ADAPEI"
         modeAsso = "AMSEAA";
     } else {
-        document.getElementById("titrePage").innerText = "Comptes Informatiques ADAPEI de la Meuse";
-        logoPage.src ="assets/img/logo_adapei_meuse.jpg";
+        document.getElementById("titrePage").innerText = "Comptes Informatiques AMIE55";
+        logoPage.src ="assets/img/logo-amie1.jpg";
         logoPage.crossOrigin ="anonymous";
         vague.src ="assets/img/vague_adapei_meuse.jpg";
         document.getElementById("changeLogoBtn").innerText = "AMSEAA"
