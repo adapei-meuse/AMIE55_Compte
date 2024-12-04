@@ -16,7 +16,7 @@ function updateNames() {
     document.getElementById("nomOutput").innerText = prenom + " " + nom;
     document.getElementsByTagName("title").item(0).innerText = prenom + " " + nom;
 
-    let identifiant1 = (prenom.charAt(0) + nom).toLowerCase();
+    let identifiant1 = (prenom.charAt(0) + "." + nom).toLowerCase();
     document.getElementById("identifiantOutput").innerText = identifiant1;
 
     let identifiant2 = `${prenom.toLowerCase()}.${nom.toLowerCase()}`;
